@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Ravi Singh Patel</h1>
+        <p class="lead text-muted"> Welcome to my portfolio! I am a B.E. Computer Science and Engineering student with a passion for exploring new technologies and creating innovative solutions. Here, you will find a collection of my projects, skills, and experiences that showcase my technical knowledge and dedication to the field of computer science. I hope you enjoy browsing through my portfolio and getting to know me better. </p>
+        <p>
+            <a href="mailto:ravi.patel57144@gmail.com?subject=Let's work together on your next project!" class="btn btn-secondary btn-lg rounded-pill shadow-sm"
+            style="background-color: #707880; border-color: #030303; font-weight: bold;"
+            onmouseover="this.innerHTML='Let\'s work together on your next project!'"
+            onmouseout="this.innerHTML='Hire me'">Hire me</a>
+        </p>
+          <img src="{% static '/assets/images/ravihoodie.jpg' %}" width="500" height="600" style="border-radius: 100%">
+      </div>
+    </div>
+  </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          {% for pro in profile.all %}
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="card-img-top" width="300" height="225" src="{{ pro.image.url }}" alt="{{ pro.title }}">
+                <div class="card-body">
+                  <p class="card-text">{{ pro.summary }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+</main>
+<br>
+{% endblock %}
