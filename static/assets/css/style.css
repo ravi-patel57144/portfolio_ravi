@@ -7,3 +7,11 @@ footer {
     padding: 10px;
     text-align: center;
 }
+.navbar-brand {
+  background: linear-gradient(to right, red 50%, #f1efef 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
