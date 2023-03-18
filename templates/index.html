@@ -7,17 +7,26 @@
 
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">Ravi Singh Patel</h1>
-      <img src="{% static '/assets/images/ravihoodie.jpg' %}" width="500" height="500" style="border-radius: 80%; filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5));">
-      <p class="lead text-muted">Welcome to my portfolio! I am a B.E. Computer Science and Engineering student with a passion for exploring new technologies and creating innovative solutions. Here, you will find a collection of my projects, skills, and experiences that showcase my technical knowledge and dedication to the field of computer science. I hope you enjoy browsing through my portfolio and getting to know me better.</p>
-      <p>
-        <a href="mailto:ravi.patel57144@gmail.com?subject=Let's work together on your next project!" class="btn btn-secondary btn-lg rounded-pill shadow-sm" style="background-color: #707880; border-color: #030303; font-weight: bold;" onmouseover="this.innerHTML='Let\'s work together on your next project!'" onmouseout="this.innerHTML='Hire me'">Hire me</a>
-      </p>
-    </div>
+      <div class="col-lg-6 mx-auto">
+          <div class="self-introduction">
+              <span class="span-desg" style="font-size: 2em; font-family: ui-monospace;">Welcome to my portfolio!</span><br>
+              <span class="span-name" style="font-size: 3em; font-family: ui-monospace; color: red;">Ravi Singh Patel</span>
+              <p>
+                <a href="mailto:ravi.patel57144@gmail.com?subject=Let's work together on your next project!" class="btn btn-secondary btn-lg rounded-pill shadow-sm" style="background-color: #D14836; border-color: #030303; font-weight: bold; color: #fff;" onmouseover="this.innerHTML='Click to Email!'" onmouseout="this.innerHTML='Hire me'">Hire me!</a>
+                <a href="tel:+918511861104" class="btn btn-secondary btn-lg rounded-pill shadow-sm d-inline-block" style="background-color: #4285F4; border-color: #030303; font-weight: bold;" onmouseover="this.innerHTML='Click to Call!'" onmouseout="this.innerHTML='Contact me!'">Contact me!</a>
+                <a href="https://wa.me/+918867654203" target="_blank" class="btn btn-secondary btn-lg rounded-pill shadow-sm" style="background-color: #25d366; border-color: #030303; font-weight: bold;" onmouseover="this.innerHTML='Click to WhatsApp!'" onmouseout="this.innerHTML='WhatsApp me!'">WhatsApp me!</a>
+              </p>
+          </div>
+      </div>
+    <div class="col-lg-6 mx-auto">
+      <div class="self-img">
+          <img src="{% static '/assets/images/ravipic.png' %}" class="w-75" height="300px" width="150px" style="border-radius: 100%;">
+      </div>
   </div>
-
-    <div class="album py-5 bg-light">
+  <div class="col-lg-12 mx-auto">
+      <p class="lead text-muted">I am a B.E. Computer Science and Engineering student with a passion for exploring new technologies and creating innovative solutions. Here, you will find a collection of my projects, skills, and experiences that showcase my technical knowledge and dedication to the field of computer science. I hope you enjoy browsing through my portfolio and getting to know me better.</p>
+  </div>
+          <div class="album py-5 bg-light">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
           {% for pro in profile.all %}
@@ -33,7 +42,9 @@
         </div>
       </div>
     </div>
+    </div>
 </section>
+
 
 </main>
 
