@@ -1,0 +1,19 @@
+# Enable caching of static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/webp "access plus 1 week"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Set cache-control headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(png|jpe?g|webp|css|js)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
+
+# Set WebP MIME type
+AddType image/webp .webp
