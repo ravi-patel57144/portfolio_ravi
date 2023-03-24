@@ -1,1 +1,2 @@
 *.idea
+passenger_wsgi.py
