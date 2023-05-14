@@ -1,2 +1,2 @@
 *.idea
-passenger_wsgi.py
+venv
