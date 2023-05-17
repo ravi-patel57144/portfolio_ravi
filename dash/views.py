@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
-from .models import Profile, Docs
+from .models import Profile
+from dash.models import Docs
 
 
 # Create your views here.

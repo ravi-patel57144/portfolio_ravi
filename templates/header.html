@@ -14,10 +14,10 @@
           <a class="nav-link active" href="{% if docs %} {{ docs.github }} {% else %} https://www.linkedin.com/in/ravi-patel57144/ {% endif %}" target="_blank"><span style="color:#ffffff">Github</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="{% url 'blogs' %}"><span style="color:#ffffff">Blogs</span></a>
+            <a class="nav-link active" href="{% url 'blogs' %}"><span style="color:#ffffff">Projects</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="{% if docs %} {{ docs.resume.url }} {% else %} https://www.linkedin.com/in/ravi-patel57144/ {% endif %}" target="_blank"><span style="color:#ffffff">Resume</span></a>
+          <a class="nav-link active" href="{% if docs %} {{ docs.resume.url }} {% else %} {% static Resume.pdf %} {% endif %}" target="_blank"><span style="color:#ffffff">Resume</span></a>
         </li>
         <li class="nav-item">
           <a href="https://wa.me/+918511861104?text=Let's work together on your next project!😊" target="_blank" class="btn btn-secondary rounded-circle shadow-sm" style="background-color: green; border-color: #030303;" title="WhatsApp me"><i class="fab fa-whatsapp"></i></a>
