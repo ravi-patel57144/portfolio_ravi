@@ -1,24 +1,26 @@
-<title>Ravi's Projects</title>
+<title>Ravi's Projects Showcase</title>
 {% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
 
 <div class="container">
-
-    <h1>My Projects</h1>
+    <h1 class="heading">Experience My Remarkable Selection of Projects</h1>
     <hr>
-
-    {% for writer in all_blogs.all %}
-        <a href="{{ writer.url }}" target="_blank"><h3>{{ writer.title }}</h3></a>
-{#        <a href="{{ writer.url }}" target="_blank" style="color: black"><h3>{{ writer.title }} (Click here to Visit)</h3></a>#}
-        <img src="{{ writer.image.url }}" alt="{{ writer.title }}" style="display: block; margin: auto; text-align: center; height: 65%; width: 80%;">
-        <br>
-        <h5>{{ writer.description }}</h5>
-        <hr>
-        <br>
-    {% endfor %}
+    <div class="projects-grid">
+        {% for writer in all_blogs.all %}
+            <div class="project">
+                <a href="{{ writer.url }}" target="_blank" class="project-link">
+                    <h3 class="project-title">{{ writer.title }} <span class="visit-link">(Visit Project)</span></h3>
+                </a>
+                <img class="project-image" src="{{ writer.image.url }}" alt="{{ writer.title }}">
+                <p class="project-description">{{ writer.description }}</p>
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
 </div>
+
 <br>
 <br>
 {% endblock %}
