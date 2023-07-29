@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/rprs80115/portfolio_ravi_git/
     - /bin/cp * $DEPLOYPATH
+
+#Okay
