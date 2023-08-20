@@ -14,4 +14,4 @@ jobs:
         server: ${{ secrets.FTP_SERVERNAME }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /home/rprs80115/test_deployment/
+        server-dir: /deploy/
