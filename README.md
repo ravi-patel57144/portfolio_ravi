@@ -1,10 +1,10 @@
 # portfolio_ravi
 
-- Technologies Used
-  HTML
-  CSS
-  JS
-  Python Django
+- Technologies Used:
+  - HTML
+  - CSS
+  - JS
+  - Python Django
 
 URL - https://ravisinghpatel.engineer
 
