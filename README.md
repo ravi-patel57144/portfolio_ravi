@@ -6,7 +6,7 @@
   JS
   Python Django
 
-URL - [https](https://ravisinghpatel.engineer/)
+URL - https://ravisinghpatel.engineer
 
 # Snapshots
 
